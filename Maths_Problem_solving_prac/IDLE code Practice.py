@@ -12,18 +12,20 @@
 
 ################################################################################################4
 code = "Hello"
-guess=""
+guess = ""
 guess_count = 0
 guess_limit = 3
-Out_of_Guess = False 
-while(guess_count<guess_limit):
-    if(guess!=code and not Out_of_Guess):
-        guess=input("enter a guess : ")
-        guess_count+=1
+Out_of_Guess = False
+
+while guess_count < guess_limit:
+    if guess!= code and not Out_of_Guess:
+        guess = input("Enter a guess: ")
+        guess_count += 1
     else:
         Out_of_Guess = True
+
 if Out_of_Guess:
-    print("you lose") 
+    print("You lose")
 else:
-    print("you win ")
+    print("You win")
 
